@@ -55,15 +55,15 @@
     <div class="container">
         <div class="row">
            
-            <div class="col-md-2 col-md-push-5">
+            <div class="col-md-2 col-md-push-5 col-sm-12">
                 <a href="/" class="logo">
                     <img src="images/logo.png" alt="Артём Ковалёнок">
                 </a>
             </div>
-             <div class="col-md-5 col-md-pull-2">
+             <div class="col-md-5 col-md-pull-2 hidden-xs hidden-sm">
                 <h4 class="header-title">Я веду свадьбы и делаю это круто!</h4>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 hidden-xs hidden-sm">
                 <div class="contacts header-contacts">
                     <div class="contacts-social">
                         <div class="social-icons">
@@ -78,6 +78,38 @@
                         <h5 class="excerpt">Ведущий праздничных мероприятий</h5>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav hidden-lg hidden-md">
+        <div class="nav-wrapp">
+            <a href="#" id="mobile-nav-button">
+                <i class="fa fa-navicon"></i>
+            </a>
+            <div class="nav-wrapp-content">
+                <h3>Артём Ковалёнок</h3>
+                <h5 class="excerpt">Ведущий праздничных мероприятий</h5>
+
+                <div class="contacts-tel">
+                    <div class="social-icons">
+                        <a href="tel:+375(33)-333-33-33"><i class="fa fa-phone"></i></a>
+                        <a href="sms:+375(33)-333-33-33"><i class="fa fa-envelope-o"></i></a>
+                        <a href="mailto:mail@kovalenok.com"><i class="fa fa-at"></i></a>
+                    </div>
+                </div>
+
+                <div class="contacts-social">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-vk"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contacts-phone">
+                    +375(33)333-33-33
+                </div>
+
+                <h6>Я веду свадьбы и делаю это круто!</h6>
             </div>
         </div>
     </div>
@@ -378,8 +410,8 @@
                 <div class="form-fields-wrapp">
                     <h3>Узнать <br>свободна ли ваша дата?</h3>
                     <div class="col-md-6">
-                        <p class="input-wrapp user-name"><input type="text" name="user-name" id="user-name" placeholder="Пожалуйста, представьтесь"></p>
-                        <p class="input-wrapp user-phone"><input type="text" name="user-phone" id="user-phone" placeholder="Номер телефона или e-mail"></p>
+                        <p class="input-wrapp user-name"><input type="text" name="user-name" id="user-name" required placeholder="Пожалуйста, представьтесь"></p>
+                        <p class="input-wrapp user-phone"><input type="text" name="user-phone" id="user-phone" required placeholder="Номер телефона или e-mail"></p>
                         <p class="input-wrapp event-date"><input type="text" name="event-date" id="event-date" placeholder="Дата планируемого мероприятия" class="datepicker"></p>
 
                     </div>
@@ -400,7 +432,7 @@
     <div class="footer-wrapp">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7 col-lg-6 col-sm-12 footer-top">
                     <h2>Артём Ковалёнок</h2>
                     <h5 class="excerpt">Ведущий праздничных мероприятий</h5>
 
@@ -416,18 +448,23 @@
                             <div class="contacts-phone">+375(33)333-33-33</div>
                         </div>
 
-                        <div class="logo-wrapp">
+                        <div class="logo-wrapp hidden-xs">
                             <a href="/" class="logo">
                                 <img src="images/logo.png" alt="Артём Ковалёнок">
                             </a>
                         </div>
 
                 </div>
-                <div class="col-md-5 col-md-offset-1">
+                <div class="col-md-5 col-lg-5 col-lg-offset-1 col-sm-12">
                     <div class="addres">
                         <div class="addres-map" id="google-map" data-lat="53.8762615" data-lng="27.4587929"></div>
                         <div class="addres-text"><span>Адрес: </span>г. Минск ст.м. Михалова (ул. Горецкого 3)</div>
                     </div>
+                </div>
+                <div class="logo-wrapp hidden-lg hidden-md hidden-sm logo-wrapp_bottom">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="Артём Ковалёнок">
+                    </a>
                 </div>
             </div>
         </div>

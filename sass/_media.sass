@@ -39,12 +39,37 @@
             display: inline-block
             max-width: auto
             max-height: 74px
-
+    .addres-text
+        font-size: 17px
 @media screen and (max-width: 992px)
-
+    .logo
+        line-height: 75px
+        margin-top: 10px
+        z-index: 10
+        position: relative
     h3
         font-size: 30px
         line-height: 40px
+    .header
+        text-align: center
+        padding-bottom: 0
+        background-color: #FFF
+        height: 75px
+        min-height: inherit
+        &::after
+            content: ''
+            position: absolute
+            top: 100%
+            margin-top: -1px
+            left: 0
+            right: 0
+            width: 100%
+            display: block
+            // height: 20px
+            border-style: solid
+            border-width: 30px 900px 0 0
+            border-color: #fff transparent transparent transparent
+
     .main
         height: 780px
         .main-text
@@ -104,6 +129,13 @@
         line-height: 70px
         font-weight: 100
         font-family: "OpenSansCondensedLight", sans-serif
+    .footer
+        text-align: center
+        h2
+            text-align: center
+    .scroll-to-top
+        bottom: 20px
+        right: 20px
 
 @media screen and (max-width: 768px)
     .about,
@@ -114,7 +146,13 @@
     .date-empty
         padding: 40px 0
 
+    .main
+        height: 720px
+        .main-text
+            padding-top: 120px
     .advantage
+        &-text
+            font-size: 22px
         h3
             margin-bottom: 40px
     .services-text
@@ -123,6 +161,17 @@
     .reviews
         margin-top: 0
         margin-bottom: 0
+        &-text
+            font-size: 21px
+            line-height: 27px
+            padding-bottom: 20px
+        &-title
+            margin-bottom: 25px
+        .owl-nav
+            top: 75px
+    .reviews-item
+        padding: 0
+        margin-top: 50px
     .date-empty
         h3
             margin-bottom: 30px
@@ -133,6 +182,7 @@
         line-height: 48px
     .about
         h2
+            margin-bottom: 40px
             font-size: 54px
             line-height: 56px
         h4
@@ -155,32 +205,42 @@
             top: 0
             bottom: 0
             width: 65px
+    .footer
+        padding-top: 30px
+    .footer-contacts
+        margin-left: 0
+        float: none
+        margin-top: 40px
+        margin-bottom: 20px
+        margin-right: 0
+        padding-top: 20px
+        border-top: 1px solid $yellow-color
+        background-color: rgba(245,144,10,0.1)
+        padding-bottom: 20px
+        border-bottom: 1px solid $yellow-color
+        .contacts-social
+            margin-left: 0
+            margin-right: 0
+            display: block
+            text-align: center
+            padding-right: 0
+            font-size: 36px
+        .contacts-phone
+            text-align: center
 
-
-@media screen and (max-width: 768px)
-    .main
-        height: 720px
-        .main-text
-            padding-top: 120px
-    .about
-        h2
-            margin-bottom: 40px
-
-    .reviews-item
-        padding: 0
-        margin-top: 50px
-    .advantage
-        &-text
-            font-size: 22px
-    .reviews
-        &-text
-            font-size: 21px
-            line-height: 27px
-            padding-bottom: 20px
-        &-title
-            margin-bottom: 25px
-        .owl-nav
-            top: 75px
+    .logo-wrapp
+        margin-right: 0
+        float: none
+    .logo-wrapp_bottom
+        margin-top: 10px
+    .footer
+        .logo
+            img
+                width: 100px
+    .addres-text
+        font-size: 12px
+    .copyright-wrapp
+        margin-top: 20px
 
 @media screen and (max-width: 480px)
     .about
@@ -188,12 +248,26 @@
             font-size: 46px
             line-height: 48px
     .main
-        height: 680px
+        height: 590px
         .main-text
+            padding-top: 80px
             h1
                 font-size: 36px
                 line-height: 40px
             .action-text
-                font-size: 20px
+                font-size: 18px
                 line-height: 24px
-                margin: 50px 0 100px 0
+                margin: 40px 0 80px 0
+    .date-empty
+        input
+            padding-right: 60px
+    .copyright
+        height: 50px
+        min-height: 50px
+        line-height: 50px
+        &-wrapp
+            height: 50px
+    .copyright-text
+        font-size: 10px
+        line-height: 50px
+        margin-top: 0

@@ -60,7 +60,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('img', function() {
-    gulp.src('images-raw/*.{png,jpg,gif}')
+    gulp.src('images-raw/*.{png,jpg,gif,svg}')
         .pipe(imagemin({
             optimizationLevel: 5,
             progressive: true
