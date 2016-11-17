@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
+    minifycss = require('gulp-clean-css'),
+    stripCssComments = require('gulp-strip-css-comments'),
     rename = require('gulp-rename'),
     browserSync = require('browser-sync').create(),
     concat = require('gulp-concat'),
@@ -31,9 +32,9 @@ gulp.task('styles', function() {
             includePaths: require('node-bourbon').includePaths
         }).on('error', sass.logError))
         .pipe(autoprefixer({ browsers: ['last 15 versions'], cascade: false }))
-
+        .pipe(stripCssComments({preserve: false}))
+        .pipe(minifycss({compatibility: 'ie8'}))
         .pipe(rename('style.css'))
-        // .pipe(minifycss())
         .pipe(gulp.dest('app/'))
         .pipe(browserSync.stream());
 });
@@ -54,7 +55,7 @@ gulp.task('scripts', function() {
 
         ])
         .pipe(concat('scripts.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('app/'))
         .pipe(browserSync.stream());
 });
